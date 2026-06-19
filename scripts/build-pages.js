@@ -5,6 +5,7 @@ const SITE_URL = "https://nugadev.com";
 const pagesDir = path.join(__dirname, "../src/pages");
 const partialsDir = path.join(__dirname, "../src/partials");
 const publicDir = path.join(__dirname, "../public");
+const schemaDir = path.join(__dirname, "../src/schema");
 
 /* =========================
    HELPER FUNCTIONS
@@ -18,6 +19,10 @@ function ensureDir(dir) {
 
 function readPartial(name) {
   return fs.readFileSync(path.join(partialsDir, `${name}.html`), "utf8");
+}
+
+function readSchema(name) {
+  return fs.readFileSync(path.join(schemaDir, `${name}.json`), "utf8");
 }
 
 const navbar = readPartial("navbar");
@@ -38,13 +43,28 @@ pages.forEach((page) => {
 
   let html = fs.readFileSync(pagePath, "utf8");
 
+  const schemaFile = path.join(schemaDir, page.replace(".html", ".json"));
+
+  let schemaScript = "";
+
+  if (fs.existsSync(schemaFile)) {
+    const schemaContent = fs.readFileSync(schemaFile, "utf8");
+
+    schemaScript = `
+<script type="application/ld+json">
+${schemaContent}
+</script>
+`;
+  }
+
   html = html
     .replaceAll("{{navbar}}", navbar)
     .replaceAll("{{footer}}", footer)
     .replaceAll("{{cta-banner}}", ctaBanner)
     .replaceAll("{{floating-wa}}", floatingWa)
     .replaceAll("{{back-to-top}}", backToTop)
-    .replaceAll("{{service-cta}}", serviceCta);
+    .replaceAll("{{service-cta}}", serviceCta)
+    .replaceAll("{{schema}}", schemaScript);
 
   /*
   |--------------------------------------------------------------------------

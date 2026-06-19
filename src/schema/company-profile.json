@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Jasa Company Profile Website",
+  "description": "Website company profile profesional untuk UMKM dan bisnis lokal.",
+  "provider": {
+    "@type": "Organization",
+    "name": "NugaDev",
+    "url": "https://nugadev.com"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Indonesia"
+  }
+}

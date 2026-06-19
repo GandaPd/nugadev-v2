@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Jasa Website Portfolio",
+  "description": "Website portfolio profesional untuk freelancer dan personal branding.",
+  "provider": {
+    "@type": "Organization",
+    "name": "NugaDev",
+    "url": "https://nugadev.com"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Indonesia"
+  }
+}

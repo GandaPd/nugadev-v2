@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NugaDev",
+  "url": "https://nugadev.com",
+  "logo": "https://nugadev.com/assets/logo/logo.png",
+  "founder": {
+    "@type": "Person",
+    "name": "Ganda Prawira Dinata"
+  },
+  "areaServed": "Indonesia",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+62-852-6560-5782",
+    "contactType": "customer service"
+  }
+}
