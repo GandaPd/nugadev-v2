@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const SITE_URL = "https://nugadev.com";
 
 const pagesDir = path.join(__dirname, "../src/pages");
 const partialsDir = path.join(__dirname, "../src/partials");
@@ -28,6 +29,8 @@ const serviceCta = readPartial("service-cta");
 
 const pages = fs.readdirSync(pagesDir);
 
+const sitemapUrls = [];
+
 pages.forEach((page) => {
   if (!page.endsWith(".html")) return;
 
@@ -54,6 +57,8 @@ pages.forEach((page) => {
 
     fs.writeFileSync(path.join(publicDir, "index.html"), html);
 
+    sitemapUrls.push(`${SITE_URL}/`);
+
     console.log("✓ Built: /");
     return;
   }
@@ -72,8 +77,53 @@ pages.forEach((page) => {
 
   fs.writeFileSync(path.join(outputDir, "index.html"), html);
 
+  sitemapUrls.push(`${SITE_URL}/layanan/${pageName}/`);
+
   console.log(`✓ Built: /layanan/${pageName}/`);
 });
+
+/*
+|--------------------------------------------------------------------------
+| Generate Sitemap
+|--------------------------------------------------------------------------
+*/
+
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+${sitemapUrls
+  .map(
+    (url) => `
+  <url>
+    <loc>${url}</loc>
+  </url>`,
+  )
+  .join("")}
+
+</urlset>
+`;
+
+fs.writeFileSync(path.join(publicDir, "sitemap.xml"), sitemap);
+
+console.log("✓ Sitemap generated");
+
+/*
+|--------------------------------------------------------------------------
+| Generate Robots
+|--------------------------------------------------------------------------
+*/
+
+const robots = `User-agent: *
+
+Allow: /
+
+Sitemap: ${SITE_URL}/sitemap.xml
+`;
+
+fs.writeFileSync(path.join(publicDir, "robots.txt"), robots);
+
+console.log("✓ Robots generated");
 
 function copyFolderRecursive(source, destination) {
   ensureDir(destination);

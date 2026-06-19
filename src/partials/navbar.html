@@ -20,11 +20,12 @@
       </a>
 
       <!-- Desktop Navigation -->
-      <nav aria-label="Main Navigation" class="hidden lg:block">
+      <nav id="main-nav" aria-label="Main Navigation" class="hidden lg:block">
         <ul class="flex items-center gap-8">
           <li>
             <a
               href="/"
+              data-nav
               class="font-medium text-slate-700 transition hover:text-primary"
             >
               Beranda
@@ -34,6 +35,7 @@
           <li>
             <a
               href="/#services"
+              data-nav
               class="font-medium text-slate-700 transition hover:text-primary"
             >
               Layanan
@@ -43,6 +45,7 @@
           <li>
             <a
               href="/#portfolio"
+              data-nav
               class="font-medium text-slate-700 transition hover:text-primary"
             >
               Showcase
@@ -52,6 +55,7 @@
           <li>
             <a
               href="/#faq"
+              data-nav
               class="font-medium text-slate-700 transition hover:text-primary"
             >
               FAQ
@@ -61,6 +65,7 @@
           <li>
             <a
               href="/#contact"
+              data-nav
               class="font-medium text-slate-700 transition hover:text-primary"
             >
               Kontak
@@ -134,13 +139,18 @@
     data-mobile-nav
     class="hidden border-t border-slate-200 bg-white lg:hidden"
   >
-    <nav class="mx-auto max-w-7xl px-4 py-6" aria-label="Mobile Navigation">
+    <nav
+      id="main-nav"
+      class="mx-auto max-w-7xl px-4 py-6"
+      aria-label="Mobile Navigation"
+    >
       <ul class="space-y-5">
         <li>
           <a
-            href="/#hero"
+            href="/"
             data-mobile-nav-link
-            class="block font-medium text-slate-700"
+            data-nav
+            class="block font-medium text-slate-700 transition hover:text-primary"
           >
             Beranda
           </a>
@@ -150,7 +160,8 @@
           <a
             href="/#services"
             data-mobile-nav-link
-            class="block font-medium text-slate-700"
+            data-nav
+            class="block font-medium text-slate-700 transition hover:text-primary"
           >
             Layanan
           </a>
@@ -160,7 +171,8 @@
           <a
             href="/#portfolio"
             data-mobile-nav-link
-            class="block font-medium text-slate-700"
+            data-nav
+            class="block font-medium text-slate-700 transition hover:text-primary"
           >
             Showcase
           </a>
@@ -170,7 +182,8 @@
           <a
             href="/#faq"
             data-mobile-nav-link
-            class="block font-medium text-slate-700"
+            data-nav
+            class="block font-medium text-slate-700 transition hover:text-primary"
           >
             FAQ
           </a>
@@ -180,7 +193,8 @@
           <a
             href="/#contact"
             data-mobile-nav-link
-            class="block font-medium text-slate-700"
+            data-nav
+            class="block font-medium text-slate-700 transition hover:text-primary"
           >
             Kontak
           </a>
