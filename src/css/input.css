@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3aa6a0;
+  --color-dark: #1e2938;
+  --color-secondary: #64748b;
+  --color-accent: #9fd3ca;
+
+  --font-heading: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-dark);
+    background-color: white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    line-height: 1.25;
+  }
+}
+
+@utility font-heading {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@utility font-body {
+  font-family: "Inter", sans-serif;
+}
