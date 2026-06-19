@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +14,14 @@
     />
 
     <link rel="stylesheet" href="/css/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Favicon -->
     <link rel="icon" href="/assets/logo/favicon.ico" />
@@ -40,19 +48,27 @@
   <body>
     {{navbar}}
 
-    <nav aria-label="Breadcrumb">
-      <ol class="flex items-center gap-2">
-        <li>
-          <a href="/">Beranda</a>
-        </li>
-
-        <li>/</li>
-
-        <li class="font-medium text-dark">Company Profile</li>
-      </ol>
-    </nav>
+    
 
     <main id="main-content">
+      <!-- Breadcrumb -->
+      <section class="bg-slate-50 pt-24">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <nav aria-label="Breadcrumb" class="text-sm text-secondary">
+              <ol class="flex items-center gap-2">
+                <li>
+                  <a href="/" class="hover:text-primary">🏠 Beranda </a>
+                </li>
+
+                <li>/</li>
+
+                <li class="font-medium text-dark">Company-profile</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </section>
+
       <!-- Hero -->
       <section class="bg-slate-50 pt-32 pb-20">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
