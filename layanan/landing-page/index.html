@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Jasa Landing Page untuk UMKM | Nuga</title>
+
+    <meta
+      name="description"
+      content="Nuga Web Development membantu UMKM dan bisnis lokal di Indonesia memiliki landing page profesional yang fokus menghasilkan calon pelanggan."
+    />
+
+    <link rel="stylesheet" href="/css/output.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/logo/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/logo/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/logo/favicon-16x16.png"
+    />
+
+    <link rel="apple-touch-icon" href="/assets/logo/apple-touch-icon.png" />
+
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <body>
+    <header
+  id="site-header"
+  class="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/60 bg-white/90 backdrop-blur-md transition-all duration-300"
+>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-18 items-center justify-between">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-3" aria-label="NugaDev Home">
+        <div
+          class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-lg font-bold text-white"
+        >
+          <img src="/assets/logo/logo.svg" alt="logo" />
+        </div>
+
+        <div>
+          <span class="block text-lg font-bold text-dark"> Nuga </span>
+
+          <span class="block text-xs text-secondary"> Web Development </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav id="main-nav" aria-label="Main Navigation" class="hidden lg:block">
+        <ul class="flex items-center gap-8">
+          <li>
+            <a
+              href="/"
+              data-nav
+              class="font-medium text-slate-700 transition hover:text-primary"
+            >
+              Beranda
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/#services"
+              data-nav
+              class="font-medium text-slate-700 transition hover:text-primary"
+            >
+              Layanan
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/#portfolio"
+              data-nav
+              class="font-medium text-slate-700 transition hover:text-primary"
+            >
+              Showcase
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/#faq"
+              data-nav
+              class="font-medium text-slate-700 transition hover:text-primary"
+            >
+              FAQ
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/#contact"
+              data-nav
+              class="font-medium text-slate-700 transition hover:text-primary"
+            >
+              Kontak
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <div class="hidden lg:flex">
+        <a
+          href="https://wa.me/6285265605782?text=Halo%20NugaWebDevelopment,%20saya%20ingin%20konsultasi%20website."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center rounded-xl bg-primary px-5 py-3 font-semibold text-white transition hover:opacity-90"
+        >
+          Konsultasi Gratis
+        </a>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <button
+        id="mobile-menu-button"
+        type="button"
+        aria-label="Buka menu navigasi"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-mobile-nav-toggle
+        class="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 lg:hidden"
+      >
+        <!-- Hamburger -->
+        <svg
+          id="menu-open-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+
+        <!-- Close -->
+        <svg
+          id="menu-close-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          class="hidden h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    data-mobile-nav
+    class="hidden border-t border-slate-200 bg-white lg:hidden"
+  >
+    <nav
+      id="main-nav"
+      class="mx-auto max-w-7xl px-4 py-6"
+      aria-label="Mobile Navigation"
+    >
+      <ul class="space-y-5">
+        <li>
+          <a
+            href="/"
+            data-mobile-nav-link
+            data-nav
+            class="block font-medium text-slate-700 transition hover:text-primary"
+          >
+            Beranda
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/#services"
+            data-mobile-nav-link
+            data-nav
+            class="block font-medium text-slate-700 transition hover:text-primary"
+          >
+            Layanan
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/#portfolio"
+            data-mobile-nav-link
+            data-nav
+            class="block font-medium text-slate-700 transition hover:text-primary"
+          >
+            Showcase
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/#faq"
+            data-mobile-nav-link
+            data-nav
+            class="block font-medium text-slate-700 transition hover:text-primary"
+          >
+            FAQ
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="/#contact"
+            data-mobile-nav-link
+            data-nav
+            class="block font-medium text-slate-700 transition hover:text-primary"
+          >
+            Kontak
+          </a>
+        </li>
+      </ul>
+
+      <div class="mt-6">
+        <a
+          href="https://wa.me/6285265605782?text=Halo%20NugaDev,%20saya%20ingin%20konsultasi%20website."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex w-full items-center justify-center rounded-xl bg-primary px-5 py-3 font-semibold text-white"
+        >
+          Konsultasi Gratis via WhatsApp
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+    <section class="bg-slate-50 pt-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <nav aria-label="Breadcrumb" class="text-sm text-secondary">
+          <ol class="flex items-center gap-2">
+            <li>
+              <a href="/" class="hover:text-primary"> Beranda </a>
+            </li>
+
+            <li>/</li>
+
+            <li class="font-medium text-dark">Landing Page</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <main id="main-content">
+      <!-- Hero -->
+      <section class="bg-slate-50 pt-32 pb-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div>
+              <span
+                class="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-primary"
+              >
+                Layanan Nuga Web Development
+              </span>
+
+              <h1
+                class="mt-6 text-4xl font-extrabold tracking-tight text-dark lg:text-6xl"
+              >
+                Landing Page yang Fokus Menghasilkan Calon Pelanggan
+              </h1>
+
+              <p class="mt-6 text-lg leading-relaxed text-secondary">
+                Cocok untuk UMKM, bisnis lokal, jasa profesional, event, dan
+                promosi produk yang membutuhkan website cepat, ringan, dan fokus
+                pada konversi.
+              </p>
+
+              <div class="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="https://wa.me/6285265605782?text=Halo%20Nuga,%20saya%20tertarik%20dengan%20layanan%20Landing%20Page."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="rounded-xl bg-primary px-6 py-4 font-semibold text-white"
+                >
+                  Konsultasi Gratis
+                </a>
+
+                <a
+                  href="#pricing"
+                  class="rounded-xl border border-slate-300 px-6 py-4 font-semibold text-dark"
+                >
+                  Lihat Harga
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="aspect-[4/3] rounded-3xl border border-slate-200 bg-white shadow-xl"
+              >
+                <div
+                  class="flex h-full items-center justify-center text-slate-400"
+                >
+                  Preview Landing Page Demo
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Service -->
+      <section class="py-20">
+        <div class="mx-auto max-w-4xl px-4">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold text-dark lg:text-4xl">
+              Apa Itu Landing Page?
+            </h2>
+
+            <p class="mt-6 text-lg leading-relaxed text-secondary">
+              Landing Page adalah halaman website yang dirancang untuk satu
+              tujuan utama: mengubah pengunjung menjadi calon pelanggan.
+            </p>
+
+            <p class="mt-4 text-lg leading-relaxed text-secondary">
+              Berbeda dengan website biasa yang memiliki banyak menu, landing
+              page dibuat lebih fokus sehingga pengunjung diarahkan untuk
+              melakukan tindakan tertentu seperti menghubungi WhatsApp,
+              melakukan pemesanan, atau mengisi formulir.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Target Audience -->
+      <section id="target-audience" class="bg-slate-50 py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-3xl font-bold text-dark lg:text-4xl">
+              Cocok Untuk Siapa?
+            </h2>
+
+            <p class="mt-4 text-lg text-secondary">
+              Layanan Landing Page Nuga dirancang untuk bisnis yang ingin
+              mendapatkan lebih banyak calon pelanggan tanpa website yang rumit.
+            </p>
+          </div>
+
+          <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <article class="rounded-2xl border border-slate-200 bg-white p-6">
+              <h3 class="text-lg font-semibold text-dark">UMKM</h3>
+              <p class="mt-3 text-secondary">
+                Kuliner, fashion, retail, dan berbagai usaha lokal yang ingin
+                tampil lebih profesional.
+              </p>
+            </article>
+
+            <article class="rounded-2xl border border-slate-200 bg-white p-6">
+              <h3 class="text-lg font-semibold text-dark">Jasa Profesional</h3>
+              <p class="mt-3 text-secondary">
+                Konsultan, agen properti, travel, pelatihan, dan layanan
+                lainnya.
+              </p>
+            </article>
+
+            <article class="rounded-2xl border border-slate-200 bg-white p-6">
+              <h3 class="text-lg font-semibold text-dark">Promosi Produk</h3>
+              <p class="mt-3 text-secondary">
+                Cocok untuk campaign, launching produk baru, maupun promo
+                musiman.
+              </p>
+            </article>
+
+            <article class="rounded-2xl border border-slate-200 bg-white p-6">
+              <h3 class="text-lg font-semibold text-dark">Event & Komunitas</h3>
+              <p class="mt-3 text-secondary">
+                Seminar, workshop, gathering, dan kegiatan yang membutuhkan
+                halaman informasi khusus.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-3xl font-bold text-dark lg:text-4xl">
+              Yang Akan Anda Dapatkan
+            </h2>
+
+            <p class="mt-4 text-lg text-secondary">
+              Setiap Landing Page dibuat dengan fokus pada performa, kemudahan
+              penggunaan, dan konversi.
+            </p>
+          </div>
+
+          <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-2xl border border-slate-200 p-6">
+              <h3 class="font-semibold text-dark">Desain Profesional</h3>
+              <p class="mt-3 text-secondary">
+                Tampilan modern yang menyesuaikan identitas bisnis Anda.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 p-6">
+              <h3 class="font-semibold text-dark">Mobile Friendly</h3>
+              <p class="mt-3 text-secondary">
+                Optimal di smartphone, tablet, maupun desktop.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 p-6">
+              <h3 class="font-semibold text-dark">WhatsApp Integration</h3>
+              <p class="mt-3 text-secondary">
+                Pengunjung dapat langsung menghubungi bisnis Anda.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 p-6">
+              <h3 class="font-semibold text-dark">SEO Friendly</h3>
+              <p class="mt-3 text-secondary">
+                Struktur dasar yang siap dioptimalkan untuk Google.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 p-6">
+              <h3 class="font-semibold text-dark">Loading Cepat</h3>
+              <p class="mt-3 text-secondary">
+                Dibangun menggunakan teknologi ringan tanpa framework berat.
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-slate-200 p-6">
+              <h3 class="font-semibold text-dark">Gratis Konsultasi</h3>
+              <p class="mt-3 text-secondary">
+                Diskusikan kebutuhan bisnis Anda sebelum pengerjaan dimulai.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process -->
+      <section id="process" class="bg-slate-50 py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold text-dark lg:text-4xl">
+              Proses Pengerjaan
+            </h2>
+
+            <p class="mt-4 text-lg text-secondary">
+              Alur kerja sederhana, transparan, dan mudah dipahami.
+            </p>
+          </div>
+
+          <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+            <div class="rounded-2xl bg-white p-6 text-center shadow-sm">
+              <div class="text-3xl font-bold text-primary">1</div>
+              <h3 class="mt-4 font-semibold">Konsultasi</h3>
+            </div>
+
+            <div class="rounded-2xl bg-white p-6 text-center shadow-sm">
+              <div class="text-3xl font-bold text-primary">2</div>
+              <h3 class="mt-4 font-semibold">Perencanaan</h3>
+            </div>
+
+            <div class="rounded-2xl bg-white p-6 text-center shadow-sm">
+              <div class="text-3xl font-bold text-primary">3</div>
+              <h3 class="mt-4 font-semibold">Development</h3>
+            </div>
+
+            <div class="rounded-2xl bg-white p-6 text-center shadow-sm">
+              <div class="text-3xl font-bold text-primary">4</div>
+              <h3 class="mt-4 font-semibold">Revisi</h3>
+            </div>
+
+            <div class="rounded-2xl bg-white p-6 text-center shadow-sm">
+              <div class="text-3xl font-bold text-primary">5</div>
+              <h3 class="mt-4 font-semibold">Launch</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="py-20">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold text-dark lg:text-4xl">
+              Estimasi Investasi
+            </h2>
+
+            <p class="mt-4 text-lg text-secondary">
+              Harga dapat menyesuaikan kebutuhan dan kompleksitas website.
+            </p>
+          </div>
+
+          <div class="mt-12">
+            <div class="rounded-3xl border-2 border-primary p-8 text-center">
+              <span
+                class="rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-primary"
+              >
+                Paket Landing Page
+              </span>
+
+              <div class="mt-6 text-5xl font-extrabold text-dark">
+                Mulai dari
+              </div>
+
+              <div class="mt-3 text-4xl font-extrabold text-primary">
+                Rp 1 Jutaan
+              </div>
+
+              <p class="mt-6 text-secondary">
+                Cocok untuk promosi produk, jasa, event, dan UMKM yang ingin
+                segera memiliki website profesional.
+              </p>
+
+              <a
+                href="https://wa.me/6285265605782?text=Halo%20NugaDev,%20saya%20ingin%20konsultasi%20Landing%20Page."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-8 inline-flex rounded-xl bg-primary px-6 py-4 font-semibold text-white"
+              >
+                Konsultasi Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="bg-slate-50 py-20">
+        <div class="mx-auto max-w-4xl px-4">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold text-dark">Pertanyaan Umum</h2>
+          </div>
+
+          <div class="mt-12 space-y-4">
+            <details class="rounded-xl border border-slate-200 bg-white p-5">
+              <summary class="cursor-pointer font-semibold">
+                Berapa lama pengerjaan Landing Page?
+              </summary>
+
+              <p class="mt-4 text-secondary">
+                Umumnya 3–7 hari kerja tergantung kebutuhan dan kelengkapan
+                materi.
+              </p>
+            </details>
+
+            <details class="rounded-xl border border-slate-200 bg-white p-5">
+              <summary class="cursor-pointer font-semibold">
+                Apakah sudah termasuk domain dan hosting?
+              </summary>
+
+              <p class="mt-4 text-secondary">
+                Bisa menggunakan domain dan hosting milik klien atau dibantu
+                pengadaannya oleh Nuga Web Development.
+              </p>
+            </details>
+
+            <details class="rounded-xl border border-slate-200 bg-white p-5">
+              <summary class="cursor-pointer font-semibold">
+                Apakah bisa revisi?
+              </summary>
+
+              <p class="mt-4 text-secondary">
+                Ya, terdapat revisi sesuai kesepakatan paket pengerjaan.
+              </p>
+            </details>
+
+            <details class="rounded-xl border border-slate-200 bg-white p-5">
+              <summary class="cursor-pointer font-semibold">
+                Apakah bisa konsultasi terlebih dahulu?
+              </summary>
+
+              <p class="mt-4 text-secondary">
+                Tentu. Konsultasi awal gratis dan tidak mengikat.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-primary py-16 text-center text-white">
+  <div class="mx-auto max-w-4xl px-6">
+    <h2 class="text-3xl font-bold">Siap Memiliki Website Profesional?</h2>
+
+    <p class="mt-4 text-lg text-white/90">
+      Konsultasikan kebutuhan bisnis Anda bersama Nuga Web Development.
+    </p>
+
+    <a
+      href="https://wa.me/6285265605782"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mt-8 inline-flex rounded-xl bg-white px-6 py-3 font-semibold text-primary"
+    >
+      Chat WhatsApp
+    </a>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+  <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-3">
+          <div
+            class="flex h-10 w-10 items-center justify-center rounded-xl bg-primary text-lg font-bold text-white"
+          >
+            <img src="/assets/logo/logo.svg" alt="Logo Nuga Web Development" />
+          </div>
+
+          <div>
+            <h3 class="font-bold text-dark">Nuga</h3>
+
+            <p class="text-sm text-secondary">Web Development</p>
+          </div>
+        </div>
+
+        <p class="mt-4 text-sm leading-relaxed text-slate-600">
+          Membantu UMKM dan bisnis lokal tampil profesional melalui website
+          modern, cepat, dan mobile-friendly.
+        </p>
+      </div>
+
+      <!-- Sitemap -->
+      <div>
+        <h3 class="font-semibold text-dark">Navigasi</h3>
+
+        <ul class="mt-4 space-y-3 text-sm">
+          <li><a href="/" class="hover:text-primary">Beranda</a></li>
+          <li><a href="/#services" class="hover:text-primary">Layanan</a></li>
+          <li>
+            <a href="/#portfolio" class="hover:text-primary">Project Demo</a>
+          </li>
+          <li><a href="/#faq" class="hover:text-primary">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="font-semibold text-dark">Layanan</h3>
+
+        <ul class="mt-4 space-y-3 text-sm">
+          <li>
+            <a
+              href="/layanan/landing-page/index.html"
+              class="hover:text-primary"
+            >
+              Landing Page
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/layanan/company-profile/index.html"
+              class="hover:text-primary"
+            >
+              Company Profile
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/layanan/portfolio-website/index.html"
+              class="hover:text-primary"
+            >
+              Portfolio Website
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="font-semibold text-dark">Kontak</h3>
+
+        <ul class="mt-4 space-y-3 text-sm">
+          <li>Pekanbaru, Riau</li>
+
+          <li>
+            <a
+              href="https://wa.me/6285265605782"
+              target="_blank"
+              class="hover:text-primary"
+            >
+              WhatsApp
+            </a>
+          </li>
+
+          <li>hallo@nugadev.com</li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="mt-12 border-t border-slate-200 pt-6 text-center text-sm text-slate-500"
+    >
+      © 2026 Nuga Web Development. All rights reserved.
+    </div>
+  </div>
+</footer>
+ <a
+  href="https://wa.me/6285265605782?text=Halo%20NugaDev,%20saya%20ingin%20konsultasi%20website."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat WhatsApp"
+  class="fixed bottom-5 right-5 z-50 flex h-15 w-15 items-center justify-center rounded-full bg-green-500 shadow-xl transition hover:scale-105"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    class="h-8 w-8 fill-white"
+  >
+    <path
+      d="M19.11 17.22c-.27-.13-1.57-.77-1.81-.86-.24-.09-.42-.13-.6.13-.18.27-.69.86-.84 1.04-.15.18-.31.2-.58.07-.27-.13-1.13-.42-2.15-1.34-.8-.71-1.34-1.59-1.49-1.86-.15-.27-.02-.41.11-.54.12-.12.27-.31.4-.47.13-.15.18-.27.27-.45.09-.18.04-.34-.02-.47-.07-.13-.6-1.45-.82-1.99-.22-.53-.45-.46-.6-.46h-.51c-.18 0-.47.07-.71.34-.24.27-.93.91-.93 2.22 0 1.31.95 2.57 1.08 2.75.13.18 1.87 2.86 4.53 4.01.63.27 1.12.43 1.5.55.63.2 1.21.17 1.66.1.51-.08 1.57-.64 1.79-1.26.22-.62.22-1.15.15-1.26-.07-.11-.24-.18-.51-.31z"
+    />
+  </svg>
+</a>
+ <button
+  id="back-to-top"
+  aria-label="Kembali ke atas"
+  class="fixed bottom-24 right-5 z-40 hidden h-12 w-12 rounded-full bg-dark text-white shadow-lg"
+>
+  ↑
+</button>
+
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
