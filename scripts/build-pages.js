@@ -178,3 +178,16 @@ copyFolderRecursive(
 );
 
 console.log("✓ JS copied");
+
+/*
+|--------------------------------------------------------------------------
+| Copy Font Assets
+|--------------------------------------------------------------------------
+*/
+
+copyFolderRecursive(
+  path.join(__dirname, "../src/fonts"),
+  path.join(publicDir, "fonts"),
+);
+
+console.log("✓ Fonts copied");
