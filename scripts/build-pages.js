@@ -6,6 +6,7 @@ const pagesDir = path.join(__dirname, "../src/pages");
 const partialsDir = path.join(__dirname, "../src/partials");
 const publicDir = path.join(__dirname, "../public");
 const schemaDir = path.join(__dirname, "../src/schema");
+const analytics = readPartial("analytics");
 
 /* =========================
    HELPER FUNCTIONS
@@ -64,7 +65,8 @@ ${schemaContent}
     .replaceAll("{{floating-wa}}", floatingWa)
     .replaceAll("{{back-to-top}}", backToTop)
     .replaceAll("{{service-cta}}", serviceCta)
-    .replaceAll("{{schema}}", schemaScript);
+    .replaceAll("{{schema}}", schemaScript)
+    .replaceAll("{{analytics}}", analytics);
 
   /*
   |--------------------------------------------------------------------------
