@@ -32,7 +32,16 @@
       content="Jasa pembuatan website portfolio profesional untuk freelancer, content creator, mahasiswa, dan profesional yang ingin membangun personal branding."
     />
 
-    <link rel="stylesheet" href="/css/output.css" />
+    <link
+      rel="preload"
+      href="/css/output.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript><link rel="stylesheet" href="/css/output.css" /></noscript>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

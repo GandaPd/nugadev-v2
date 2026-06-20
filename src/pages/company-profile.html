@@ -13,7 +13,16 @@
       content="Jasa pembuatan website company profile profesional untuk UMKM, perusahaan, dan bisnis lokal. Tampilkan bisnis Anda lebih kredibel bersama Nuga."
     />
 
-    <link rel="stylesheet" href="/css/output.css" />
+    <link
+      rel="preload"
+      href="/css/output.css"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript><link rel="stylesheet" href="/css/output.css" /></noscript>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
