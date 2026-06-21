@@ -32,6 +32,12 @@
       content="Nuga Web Development membantu UMKM dan bisnis lokal di Indonesia memiliki landing page profesional yang fokus menghasilkan calon pelanggan."
     />
 
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/images/services/landing-page-hero.webp"
+    />
+
     <link href="/css/output.css" rel="stylesheet" />
 
     <!-- Favicon -->
@@ -350,15 +356,19 @@
               </div>
             </div>
 
-            <div>
+            <div class="relative">
               <div
-                class="aspect-[4/3] rounded-3xl border border-slate-200 bg-white shadow-xl"
+                class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl"
               >
-                <div
-                  class="flex h-full items-center justify-center text-slate-400"
-                >
-                  Preview Landing Page Demo
-                </div>
+                <img
+                  src="/assets/images/services/landing-page-hero.webp"
+                  alt="Preview Landing Page Profesional"
+                  width="1280"
+                  height="854"
+                  loading="eager"
+                  fetchpriority="high"
+                  class="h-full w-full object-cover transition duration-500 hover:scale-[1.02]"
+                />
               </div>
             </div>
           </div>
