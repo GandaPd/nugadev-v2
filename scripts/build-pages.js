@@ -38,8 +38,70 @@ const pages = fs.readdirSync(pagesDir);
 const sitemapUrls = [];
 
 pages.forEach((page) => {
-  if (!page.endsWith(".html")) return;
+  if (!page.endsWith(".html") && page !== "blog") return;
 
+  /*
+  |--------------------------------------------------------------------------
+  | Blog Pages (Dynamic Subfolders)
+  |--------------------------------------------------------------------------
+  */
+  // 1. Tangani folder blog di sini terlebih dahulu sebelum membaca file text biasa
+  if (page === "blog") {
+    const blogSourceDir = path.join(pagesDir, "blog");
+
+    if (fs.existsSync(blogSourceDir)) {
+      const articleFolders = fs.readdirSync(blogSourceDir);
+
+      articleFolders.forEach((folderName) => {
+        const articleFolderSubDir = path.join(blogSourceDir, folderName);
+
+        if (fs.statSync(articleFolderSubDir).isDirectory()) {
+          const articleHtmlFile = path.join(
+            articleFolderSubDir,
+            `${folderName}.html`,
+          );
+
+          if (fs.existsSync(articleHtmlFile)) {
+            let blogHtml = fs.readFileSync(articleHtmlFile, "utf8");
+
+            const blogSchemaFile = path.join(
+              schemaDir,
+              "blog",
+              `${folderName}.json`,
+            );
+            let blogSchemaScript = "";
+
+            if (fs.existsSync(blogSchemaFile)) {
+              const blogSchemaContent = fs.readFileSync(blogSchemaFile, "utf8");
+              blogSchemaScript = `\n<script type="application/ld+json">\n${blogSchemaContent}\n</script>\n`;
+            }
+
+            blogHtml = blogHtml
+              .replaceAll("{{navbar}}", navbar)
+              .replaceAll("{{footer}}", footer)
+              .replaceAll("{{cta-banner}}", ctaBanner)
+              .replaceAll("{{floating-wa}}", floatingWa)
+              .replaceAll("{{back-to-top}}", backToTop)
+              .replaceAll("{{service-cta}}", serviceCta)
+              .replaceAll("{{schema}}", blogSchemaScript)
+              .replaceAll("{{analytics}}", analytics);
+
+            const blogOutputDir = path.join(publicDir, "blog", folderName);
+            ensureDir(blogOutputDir);
+
+            fs.writeFileSync(path.join(blogOutputDir, "index.html"), blogHtml);
+
+            sitemapUrls.push(`${SITE_URL}/blog/${folderName}/`);
+
+            console.log(`✓ Built Blog: /blog/${folderName}/`);
+          }
+        }
+      });
+    }
+    return; // 2. CRITICAL: Stop di sini agar folder blog tidak lanjut dibaca oleh fs.readFileSync di bawah!
+  }
+
+  // --- SISA KODE LAMA ANDA YANG DI BAWAH TETAP SEPERTI INI ---
   const pagePath = path.join(pagesDir, page);
 
   let html = fs.readFileSync(pagePath, "utf8");

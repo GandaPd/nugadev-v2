@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "name": "Cara Mmebuat Website UMKM",
+  "description": "Bagaimana cara membuat sebuah Website untuk Binis UMKM",
+  "provider": {
+    "@type": "Organization",
+    "name": "NugaDev",
+    "url": "https://nugadev.com"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Indonesia"
+  }
+}
