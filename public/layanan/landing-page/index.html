@@ -372,17 +372,20 @@
               </div>
             </div>
 
-            <div class="relative">
-              <div
-                class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-2xl"
-              >
+            <div>
+              <div class="relative">
+                <div
+                  class="absolute -top-6 -right-6 h-48 w-48 rounded-full bg-primary/10 blur-3xl"
+                ></div>
+
                 <img
                   src="/assets/images/services/landing-page-hero.webp"
                   alt="Preview Landing Page Profesional"
                   width="1280"
                   height="854"
-                  loading="eager"
-                  class="h-full w-full object-cover transition duration-500 hover:scale-[1.02]"
+                  fetchpriority="high"
+                  decoding="async"
+                  class="relative w-full rounded-3xl border border-slate-200 bg-white shadow-xl object-cover transition duration-500 hover:scale-[1.02]"
                 />
               </div>
             </div>
