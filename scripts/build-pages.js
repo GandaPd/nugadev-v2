@@ -148,6 +148,26 @@ ${schemaContent}
   }
 
   /*
+|--------------------------------------------------------------------------
+| Blog Index
+|--------------------------------------------------------------------------
+*/
+
+  if (page === "blog.html") {
+    const outputDir = path.join(publicDir, "blog");
+
+    ensureDir(outputDir);
+
+    fs.writeFileSync(path.join(outputDir, "index.html"), html);
+
+    sitemapUrls.push(`${SITE_URL}/blog/`);
+
+    console.log("✓ Built: /blog/");
+
+    return;
+  }
+
+  /*
   |--------------------------------------------------------------------------
   | Service Pages
   |--------------------------------------------------------------------------
