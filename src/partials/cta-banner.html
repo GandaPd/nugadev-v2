@@ -15,26 +15,152 @@
       Konsultasi langsung dengan founder tanpa perantara dan tanpa biaya awal.
     </p>
 
-    <form action="https://formsubmit.co/hello@nugadev.com" method="POST">
-      <input type="text" name="name" required />
-      <button type="submit">Kirim</button>
-    </form>
+    <!-- FORM START -->
+    <form
+      action="https://formsubmit.co/hello@nugadev.com"
+      method="POST"
+      class="mx-auto mt-10 max-w-xl text-left bg-white/5 p-6 sm:p-8 rounded-2xl border border-white/10 shadow-xl"
+    >
+      <!-- FormSubmit Configuration -->
+      <input
+        type="hidden"
+        name="_subject"
+        value="Lead Baru dari Website NugaDev"
+      />
+      <input type="hidden" name="_template" value="table" />
+      <!-- Mengubah tampilan email jadi tabel rapi -->
+      <input type="hidden" name="_captcha" value="false" />
+      <!-- Opsional: mematikan captcha FormSubmit jika ingin konversi instan -->
 
+      <div class="space-y-5">
+        <!-- Nama Lengkap -->
+        <div>
+          <label
+            for="name"
+            class="block text-sm font-medium text-slate-300 mb-1.5"
+            >Nama Lengkap</label
+          >
+          <input
+            type="text"
+            name="Nama Lengkap"
+            id="name"
+            required
+            class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition"
+            placeholder="Masukkan nama lengkap Anda"
+          />
+        </div>
+
+        <!-- Grid untuk Email & WhatsApp agar lebih hemat tempat di desktop -->
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2">
+          <!-- Email -->
+          <div>
+            <label
+              for="email"
+              class="block text-sm font-medium text-slate-300 mb-1.5"
+              >Email</label
+            >
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              required
+              class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition"
+              placeholder="nama@email.com"
+            />
+          </div>
+
+          <!-- WhatsApp -->
+          <div>
+            <label
+              for="whatsapp"
+              class="block text-sm font-medium text-slate-300 mb-1.5"
+              >No. WhatsApp</label
+            >
+            <input
+              type="tel"
+              name="WhatsApp"
+              id="whatsapp"
+              required
+              class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition"
+              placeholder="081234567xxx"
+            />
+          </div>
+        </div>
+
+        <!-- Jenis Website -->
+        <div>
+          <label
+            for="website_type"
+            class="block text-sm font-medium text-slate-300 mb-1.5"
+            >Jenis Website</label
+          >
+          <select
+            name="Jenis Website"
+            id="website_type"
+            required
+            class="w-full rounded-xl border border-white/10 bg-slate-900 px-4 py-3 text-white focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition cursor-pointer"
+          >
+            <option value="" disabled selected class="text-slate-500">
+              Pilih jenis website...
+            </option>
+            <option value="Landing Page" class="bg-dark">Landing Page</option>
+            <option value="Company Profile" class="bg-dark">
+              Company Profile
+            </option>
+            <option value="Website Portfolio" class="bg-dark">
+              Website Portfolio
+            </option>
+          </select>
+        </div>
+
+        <!-- Pesan -->
+        <div>
+          <label
+            for="message"
+            class="block text-sm font-medium text-slate-300 mb-1.5"
+            >Pesan / Kebutuhan Bisnis</label
+          >
+          <textarea
+            name="Pesan"
+            id="message"
+            rows="4"
+            required
+            class="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-white placeholder-slate-500 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition resize-none"
+            placeholder="Ceritakan sedikit tentang proyek website yang ingin Anda buat..."
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="pt-2">
+          <button
+            type="submit"
+            class="w-full inline-flex items-center justify-center rounded-xl bg-primary px-7 py-4 font-semibold text-white transition hover:opacity-90 shadow-lg shadow-primary/20"
+            target="_blank"
+          >
+            Kirim Formulir Konsultasi
+          </button>
+        </div>
+      </div>
+    </form>
+    <!-- FORM END -->
+
+    <!-- Tombol Alternatif (WhatsApp & Lihat Layanan) -->
     <div
       class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
     >
+      <span class="text-sm text-slate-400">Atau hubungi langsung:</span>
       <a
         href="https://wa.me/6285265605782?text=Halo%20NugaDev,%20saya%20ingin%20konsultasi%20website."
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-flex items-center justify-center rounded-xl bg-primary px-7 py-4 font-semibold text-white transition hover:opacity-90"
+        class="inline-flex items-center justify-center rounded-xl border border-white/20 bg-white/5 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-white/10"
       >
-        Konsultasi via WhatsApp
+        WhatsApp
       </a>
 
       <a
         href="#services"
-        class="inline-flex items-center justify-center rounded-xl border border-white/20 px-7 py-4 font-semibold text-white transition hover:bg-white/10"
+        class="inline-flex items-center justify-center rounded-xl border border-white/10 px-5 py-2.5 text-sm font-semibold text-slate-300 transition hover:text-white"
       >
         Lihat Layanan
       </a>
