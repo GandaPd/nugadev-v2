@@ -37,6 +37,8 @@ const pages = fs.readdirSync(pagesDir);
 
 const sitemapUrls = [];
 
+const rootPages = ["terima-kasih.html"];
+
 pages.forEach((page) => {
   if (!page.endsWith(".html") && page !== "blog") return;
 
@@ -163,6 +165,28 @@ ${schemaContent}
     sitemapUrls.push(`${SITE_URL}/blog/`);
 
     console.log("✓ Built: /blog/");
+
+    return;
+  }
+
+  /*
+|--------------------------------------------------------------------------
+| Root Pages
+|--------------------------------------------------------------------------
+*/
+
+  if (rootPages.includes(page)) {
+    const pageName = page.replace(".html", "");
+
+    const outputDir = path.join(publicDir, pageName);
+
+    ensureDir(outputDir);
+
+    fs.writeFileSync(path.join(outputDir, "index.html"), html);
+
+    sitemapUrls.push(`${SITE_URL}/${pageName}/`);
+
+    console.log(`✓ Built: /${pageName}/`);
 
     return;
   }
