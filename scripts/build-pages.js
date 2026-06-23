@@ -219,7 +219,15 @@ console.log("✓ Sitemap generated");
 */
 
 const robots = `User-agent: *
+Allow: /
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: ${SITE_URL}/sitemap.xml
