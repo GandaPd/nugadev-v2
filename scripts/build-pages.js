@@ -192,6 +192,24 @@ ${schemaContent}
   }
 
   /*
+|--------------------------------------------------------------------------
+| Thank You Page
+|--------------------------------------------------------------------------
+*/
+
+  if (page === "terima-kasih.html") {
+    const outputDir = path.join(publicDir, "terima-kasih");
+
+    ensureDir(outputDir);
+
+    fs.writeFileSync(path.join(outputDir, "index.html"), html);
+
+    console.log("✓ Built: /terima-kasih/");
+
+    return;
+  }
+
+  /*
   |--------------------------------------------------------------------------
   | Service Pages
   |--------------------------------------------------------------------------
