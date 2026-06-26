@@ -54,6 +54,42 @@
   padding-top: calc(var(--spacing) * 28);
 }
 
+@utility badge-secondary {
+  @apply rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-secondary;
+}
+
+@utility portfolio-filter {
+  @apply rounded-full
+         border
+         border-slate-200
+         bg-white
+         px-6
+         py-3
+         font-medium
+         text-secondary
+         transition-all
+         duration-200;
+
+  &:hover {
+    @apply border-primary text-primary;
+  }
+}
+
+@utility portfolio-filter-active {
+  @apply rounded-full
+         bg-primary
+         px-6
+         py-3
+         font-semibold
+         text-white;
+}
+
+@utility portfolio-card {
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
 @import "tailwindcss";
 
 /* Tulis menggunakan CSS murni biasa di bawah baris import */

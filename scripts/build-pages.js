@@ -224,6 +224,26 @@ ${schemaContent}
   }
 
   /*
+|--------------------------------------------------------------------------
+| Portfolio Page
+|--------------------------------------------------------------------------
+*/
+
+  if (page === "portfolio.html") {
+    const outputDir = path.join(publicDir, "portfolio");
+
+    ensureDir(outputDir);
+
+    fs.writeFileSync(path.join(outputDir, "index.html"), html);
+
+    sitemapUrls.push(`${SITE_URL}/portfolio/`);
+
+    console.log("✓ Built: /portfolio/");
+
+    return;
+  }
+
+  /*
   |--------------------------------------------------------------------------
   | Service Pages
   |--------------------------------------------------------------------------

@@ -1,0 +1,43 @@
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+
+  "name": "Portfolio Website - Nuga Web Development",
+
+  "description": "Kumpulan contoh Landing Page, Company Profile, dan Portfolio Website yang dibuat oleh Nuga Web Development.",
+
+  "url": "https://nugadev.com/portfolio/",
+
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Nuga Web Development",
+    "url": "https://nugadev.com"
+  },
+
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nuga Web Development",
+
+    "url": "https://nugadev.com",
+
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://nugadev.com/assets/logo/logo.png"
+    }
+  },
+
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Landing Page"
+    },
+    {
+      "@type": "Thing",
+      "name": "Company Profile Website"
+    },
+    {
+      "@type": "Thing",
+      "name": "Portfolio Website"
+    }
+  ]
+}
