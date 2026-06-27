@@ -702,54 +702,106 @@
       </section>
 
       <!-- FAQ -->
-      <section id="faq" class="bg-slate-50 py-20">
-        <div class="mx-auto max-w-4xl px-4">
+      <section id="faq" class="bg-slate-50 py-20 lg:py-28">
+        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div class="text-center">
-            <h2 class="text-3xl font-bold text-dark">Pertanyaan Umum</h2>
+            <span
+              class="inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-primary"
+            >
+              FAQ
+            </span>
+
+            <h2
+              class="mt-6 font-heading text-3xl font-extrabold text-dark sm:text-4xl"
+            >
+              Pertanyaan Seputar Website Company Profile
+            </h2>
+
+            <p class="mt-4 text-lg text-secondary">
+              Beberapa pertanyaan yang paling sering ditanyakan sebelum membuat
+              Website Company Profile.
+            </p>
           </div>
 
           <div class="mt-12 space-y-4">
-            <details class="rounded-xl border border-slate-200 bg-white p-5">
-              <summary class="cursor-pointer font-semibold">
-                Berapa lama pengerjaan Website Company Profile?
-              </summary>
+            <div
+              class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+            >
+              <button
+                class="faq-button flex w-full items-center justify-between px-6 py-5 text-left"
+                aria-expanded="false"
+              >
+                <span class="font-semibold text-dark"
+                  >Berapa lama proses pengerjaan Website Company Profile?</span
+                >
+                <span class="faq-icon text-primary">+</span>
+              </button>
+              <div class="faq-content hidden px-6 pb-5">
+                <p class="leading-relaxed text-secondary">
+                  Rata-rata pengerjaan membutuhkan waktu sekitar 5–14 hari kerja
+                  tergantung jumlah halaman dan kelengkapan materi.
+                </p>
+              </div>
+            </div>
 
-              <p class="mt-4 text-secondary">
-                Umumnya 5–14 hari kerja tergantung kebutuhan dan kelengkapan
-                materi.
-              </p>
-            </details>
+            <div
+              class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+            >
+              <button
+                class="faq-button flex w-full items-center justify-between px-6 py-5 text-left"
+                aria-expanded="false"
+              >
+                <span class="font-semibold text-dark"
+                  >Berapa jumlah halaman yang didapat?</span
+                >
+                <span class="faq-icon text-primary">+</span>
+              </button>
+              <div class="faq-content hidden px-6 pb-5">
+                <p class="leading-relaxed text-secondary">
+                  Jumlah halaman dapat disesuaikan dengan kebutuhan bisnis Anda.
+                </p>
+              </div>
+            </div>
 
-            <details class="rounded-xl border border-slate-200 bg-white p-5">
-              <summary class="cursor-pointer font-semibold">
-                Berapa Jumlah Halaman?
-              </summary>
+            <div
+              class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+            >
+              <button
+                class="faq-button flex w-full items-center justify-between px-6 py-5 text-left"
+                aria-expanded="false"
+              >
+                <span class="font-semibold text-dark"
+                  >Apakah halaman dapat ditambah di kemudian hari?</span
+                >
+                <span class="faq-icon text-primary">+</span>
+              </button>
+              <div class="faq-content hidden px-6 pb-5">
+                <p class="leading-relaxed text-secondary">
+                  Ya. Website dibuat agar mudah dikembangkan ketika bisnis Anda
+                  berkembang.
+                </p>
+              </div>
+            </div>
 
-              <p class="mt-4 text-secondary">
-                Bisa menyesuaikan dengan kebutuhan bisnis.
-              </p>
-            </details>
-
-            <details class="rounded-xl border border-slate-200 bg-white p-5">
-              <summary class="cursor-pointer font-semibold">
-                Apakah bisa menambah halaman?
-              </summary>
-
-              <p class="mt-4 text-secondary">
-                Ya, bisa menambah halaman sesuai kesepakatan paket pengerjaan.
-              </p>
-            </details>
-
-            <details class="rounded-xl border border-slate-200 bg-white p-5">
-              <summary class="cursor-pointer font-semibold">
-                Apakah bisa revisi?
-              </summary>
-
-              <p class="mt-4 text-secondary">
-                Tentu. Bisa melakukan revisi sesuai kesepakatan paket
-                pengerjaan.
-              </p>
-            </details>
+            <div
+              class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
+            >
+              <button
+                class="faq-button flex w-full items-center justify-between px-6 py-5 text-left"
+                aria-expanded="false"
+              >
+                <span class="font-semibold text-dark"
+                  >Apakah tersedia revisi?</span
+                >
+                <span class="faq-icon text-primary">+</span>
+              </button>
+              <div class="faq-content hidden px-6 pb-5">
+                <p class="leading-relaxed text-secondary">
+                  Ya. Revisi tersedia sesuai kesepakatan pada paket yang
+                  dipilih.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -922,10 +974,10 @@
               />
             </div>
             <a
-              href="mailto:hallo@nugadev.com"
+              href="mailto:hello@nugadev.com"
               class="text-dark hover:text-primary transition-colors font-medium"
             >
-              hallo@nugadev.com
+              hello@nugadev.com
             </a>
           </li>
         </ul>

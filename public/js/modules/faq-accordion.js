@@ -1,16 +1,43 @@
-const faqButtons = document.querySelectorAll(".faq-button");
+export default function initFaqAccordion() {
+  const faqButtons = document.querySelectorAll(".faq-button");
 
-faqButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const content = button.nextElementSibling;
-    const icon = button.querySelector(".faq-icon");
+  if (!faqButtons.length) return;
 
-    const isOpen = button.getAttribute("aria-expanded") === "true";
+  faqButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const isOpen = button.getAttribute("aria-expanded") === "true";
 
-    button.setAttribute("aria-expanded", !isOpen);
+      // Tutup semua FAQ
+      faqButtons.forEach((otherButton) => {
+        otherButton.setAttribute("aria-expanded", "false");
 
-    content.classList.toggle("hidden");
+        const otherContent = otherButton.nextElementSibling;
+        const otherIcon = otherButton.querySelector(".faq-icon");
 
-    icon.textContent = isOpen ? "+" : "−";
+        if (otherContent) {
+          otherContent.classList.add("hidden");
+        }
+
+        if (otherIcon) {
+          otherIcon.textContent = "+";
+        }
+      });
+
+      // Jika sebelumnya tertutup, buka FAQ yang dipilih
+      if (!isOpen) {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector(".faq-icon");
+
+        button.setAttribute("aria-expanded", "true");
+
+        if (content) {
+          content.classList.remove("hidden");
+        }
+
+        if (icon) {
+          icon.textContent = "−";
+        }
+      }
+    });
   });
-});
+}
