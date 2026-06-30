@@ -3,7 +3,12 @@
   "@type": "BlogPosting",
   "headline": "7 Manfaat Website untuk UMKM di Era Digital",
   "description": "Pelajari 7 manfaat website untuk UMKM di era digital, mulai dari meningkatkan kredibilitas bisnis hingga membantu mendapatkan pelanggan baru secara online.",
-  "image": "https://nugadev.com/assets/images/blog/manfaat-website-untuk-umkm.webp",
+  "image": "https://www.nugadev.com/assets/images/blog/manfaat-website-untuk-umkm.webp",
+  "url": "https://www.nugadev.com/blog/manfaat-website-untuk-umkm/",
+  "inLanguage": "id-ID",
+  "isAccessibleForFree": true,
+  "genre": "Website Development",
+  "articleSection": "UMKM",
   "author": {
     "@type": "Organization",
     "name": "Nuga Web Development"
@@ -13,13 +18,22 @@
     "name": "Nuga Web Development",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://nugadev.com/assets/logo/logo.png"
+      "url": "https://www.nugadev.com/assets/logo/logo.png"
     }
   },
   "datePublished": "2026-07-01",
   "dateModified": "2026-07-01",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://nugadev.com/blog/manfaat-website-untuk-umkm/"
-  }
+    "@id": "https://www.nugadev.com/blog/manfaat-website-untuk-umkm/"
+  },
+  "keywords": [
+    "website UMKM",
+    "manfaat website",
+    "website bisnis",
+    "website usaha kecil",
+    "website profesional",
+    "SEO UMKM",
+    "digital marketing UMKM"
+  ]
 }

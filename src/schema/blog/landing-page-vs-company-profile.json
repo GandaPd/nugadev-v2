@@ -1,9 +1,14 @@
 {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "BlogPosting",
   "headline": "Landing Page vs Company Profile: Mana yang Cocok untuk Bisnis Anda?",
   "description": "Pelajari perbedaan landing page dan company profile website serta kapan bisnis Anda sebaiknya menggunakan masing-masing jenis website.",
   "image": "https://www.nugadev.com/assets/images/blog/landing-page-vs-company-profile.webp",
+  "url": "https://www.nugadev.com/blog/landing-page-vs-company-profile/",
+  "inLanguage": "id-ID",
+  "isAccessibleForFree": true,
+  "genre": "Website Development",
+  "articleSection": "Landing Page",
   "author": {
     "@type": "Organization",
     "name": "Nuga Web Development"
@@ -21,5 +26,14 @@
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.nugadev.com/blog/landing-page-vs-company-profile/"
-  }
+  },
+  "keywords": [
+    "landing page",
+    "company profile",
+    "perbedaan landing page",
+    "website company profile",
+    "website bisnis",
+    "landing page bisnis",
+    "website profesional"
+  ]
 }

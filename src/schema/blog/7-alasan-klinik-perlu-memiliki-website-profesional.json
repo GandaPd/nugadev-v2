@@ -1,0 +1,39 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "7 Alasan Klinik Perlu Memiliki Website Profesional di Era Digital",
+  "description": "Pelajari 7 alasan mengapa website profesional dapat membantu klinik meningkatkan kepercayaan pasien, mempermudah reservasi, muncul di Google Search, hingga memperkuat citra layanan kesehatan.",
+  "image": "https://www.nugadev.com/assets/images/blog/website-klinik-profesional.webp",
+  "inLanguage": "id-ID",
+  "isAccessibleForFree": true,
+  "articleSection": "Website Bisnis",
+  "author": {
+    "@type": "Organization",
+    "name": "Nuga Web Development"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nuga Web Development",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.nugadev.com/assets/logo/logo.png"
+    }
+  },
+  "datePublished": "2026-07-01",
+  "dateModified": "2026-07-01",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "url": "https://www.nugadev.com/blog/7-alasan-klinik-perlu-memiliki-website-profesional/",
+    "@id": "https://www.nugadev.com/blog/7-alasan-klinik-perlu-memiliki-website-profesional/"
+  },
+  "keywords": [
+    "website klinik",
+    "website rumah sakit",
+    "jasa pembuatan website klinik",
+    "website dokter",
+    "website kesehatan",
+    "SEO klinik",
+    "website klinik profesional",
+    "website klinik modern"
+  ]
+}

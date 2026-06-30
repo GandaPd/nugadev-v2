@@ -1,14 +1,17 @@
 {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "BlogPosting",
   "headline": "Berapa Biaya Pembuatan Website di Pekanbaru Tahun 2026?",
   "description": "Panduan lengkap biaya pembuatan website di Pekanbaru tahun 2026. Pelajari faktor yang memengaruhi harga website dan cara memilih jasa website yang tepat.",
-  "image": [
-    "https://www.nugadev.com/assets/images/blog/biaya-pembuatan-website-pekanbaru.webp"
-  ],
+  "image": "https://www.nugadev.com/assets/images/blog/biaya-pembuatan-website-pekanbaru.webp",
+  "url": "https://www.nugadev.com/blog/biaya-pembuatan-website-pekanbaru/",
+  "inLanguage": "id-ID",
+  "isAccessibleForFree": true,
+  "genre": "Website Development",
+  "articleSection": "Harga Website",
   "author": {
-    "@type": "Person",
-    "name": "Ganda Prawira Dinata"
+    "@type": "Organization",
+    "name": "Nuga Web Development"
   },
   "publisher": {
     "@type": "Organization",
@@ -23,5 +26,14 @@
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://www.nugadev.com/blog/biaya-pembuatan-website-pekanbaru/"
-  }
+  },
+  "keywords": [
+    "biaya website",
+    "harga website",
+    "jasa pembuatan website",
+    "website Pekanbaru",
+    "biaya website Pekanbaru",
+    "harga landing page",
+    "harga company profile"
+  ]
 }
